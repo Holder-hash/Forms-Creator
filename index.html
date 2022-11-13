@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Test</title>
+</head>
+<body> 
+
+  <span>Цвет</span><input type="text" id="input"><br>
+  <span>Ширина</span><input type="range" min="0" max="1000" value='50' id="width"><span id="widthSpan">50px</span><br>
+  <span>Высота</span><input type="range" min="0" max="1000" value='50' id="height"><span id="heightSpan">50px</span><br>
+  
+  <form id="borderForm">
+    <input type="checkbox" id="border" onchange="chbox()">Обводка
+  </form>
+
+  <form id="radiusForm">
+    <input type="checkbox" id="radius" onchange="radbox()">Закругление
+  </form>
+
+  <button id="btn">Показать код</button>
+  <p id="code"></p>
+  <hr>
+
+  <div id="box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
